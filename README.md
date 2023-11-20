@@ -14,7 +14,7 @@ $ npm install ects-converter-module
 Once the package is installed, you can import the library using `require` approach:
 
 ```js
-const ECTSconverter = require('ects-converter-module');
+const ECTS = require('ects-converter-module');
 ```
 
 ## Example
@@ -23,9 +23,9 @@ const ECTSconverter = require('ects-converter-module');
 const ECTS = require('ects-converter-module');
 
 const score = 80;
-const ectsInstance = new ECTS(points);
-const ectsGrade = EctsInstance.ectsFromScore();
+const ectsInstance = new ECTS(score);
+const ectsGrade = ectsInstance.ectsFromScore();
 
-console.log(gradeInEctsFormat);
+console.log(ectsGrade);
 // expected output: "C" 
 ```
