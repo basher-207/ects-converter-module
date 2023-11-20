@@ -8,24 +8,23 @@ It accepts only numbers in range 0 - 100.
 Using npm:
 
 ```bash
-$ npm install ects-converter
+$ npm install ects-converter-module
 ```
 
 Once the package is installed, you can import the library using `require` approach:
 
 ```js
-const ECTSconverter = require('ects-converter');
+const ECTSconverter = require('ects-converter-module');
 ```
 
 ## Example
 
 ```js
-const ECTSconverter = require('ects-converter');
+const ECTS = require('ects-converter-module');
 
-const points = 80;
-const myPointsToConvert = new ECTSconverter(points);
-
-const gradeInEctsFormat = myPointsToConvert.ectsFromScore();
+const score = 80;
+const ectsInstance = new ECTS(points);
+const ectsGrade = EctsInstance.ectsFromScore();
 
 console.log(gradeInEctsFormat);
 // expected output: "C" 
